@@ -16,5 +16,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func notePressed(_ sender: UIButton) {
+        print(sender.tag)
+    }
 }
 
