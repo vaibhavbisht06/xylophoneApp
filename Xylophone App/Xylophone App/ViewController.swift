@@ -24,6 +24,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     var audioFiles = ["note1", "note2", "note3", "note4", "note5", "note6", "note7"]
     
     
+    //Function for button
     @IBAction func notePressed(_ sender: UIButton) {
         
         // Playing Sound for Each Different Button
