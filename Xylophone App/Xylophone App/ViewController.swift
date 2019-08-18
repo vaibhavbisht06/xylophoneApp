@@ -19,7 +19,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+    //Making an array of sounds
     var audioFiles = ["note1", "note2", "note3", "note4", "note5", "note6", "note7"]
     
     
