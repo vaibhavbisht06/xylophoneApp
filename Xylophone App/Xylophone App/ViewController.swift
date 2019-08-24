@@ -30,7 +30,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         // Playing Sound for Each Different Button
         
         playSound(audioFiles[sender.tag - 1])
-        
+ 
     }
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
