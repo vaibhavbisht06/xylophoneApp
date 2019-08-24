@@ -30,17 +30,17 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         // Playing Sound for Each Different Button
         
         playSound(audioFiles[sender.tag - 1])
- 
+  
     }
     
-    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+  /*  override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         let number = Int.random(in: 1...7)
         playSound(audioFiles[number - 1])
     }
-    
-    func playSound(_ selectedSoundFileName : String) {
+    */
+    func playSound(_ selectedNote : String) {
         
-        let soundURL = Bundle.main.url(forResource: selectedSoundFileName, withExtension: "wav")!
+        let soundURL = Bundle.main.url(forResource: selectedNote, withExtension: "wav")!
         
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: soundURL as URL)
